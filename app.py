@@ -54,12 +54,12 @@ def main():
     # Load the model and transformers
     model = joblib.load("random_forest_model_for_attrition.joblib")
     min_max_scaler = load_transformer("min_max_scaler.pkl")
-    standard_scaler = load_transformer("standard_scaler.pkl")
+    standard_scaler = load_transformer("standard_scaler (1).pkl")
     normalizer = load_transformer("normalizer.pkl")
 
     # Title of the application
     st.title('Employee Attrition Prediction')
-
+    st.markdown("#### PROJECT WORK BY: OLASUPO IBRAHIM")
     # Create sidebar for input features
     st.sidebar.header('Input Features')
 
