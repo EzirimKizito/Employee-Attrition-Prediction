@@ -52,10 +52,10 @@ def preprocess_data(df, continuous_columns, min_max_scaler, standard_scaler, nor
 
 def main():
     # Load the model and transformers
-    model = joblib.load("/content/random_forest_model_for_attrition.joblib")
-    min_max_scaler = load_transformer("/content/transformers/min_max_scaler.pkl")
-    standard_scaler = load_transformer("/content/transformers/standard_scaler.pkl")
-    normalizer = load_transformer("/content/transformers/normalizer.pkl")
+    model = joblib.load("random_forest_model_for_attrition.joblib")
+    min_max_scaler = load_transformer("min_max_scaler.pkl")
+    standard_scaler = load_transformer("standard_scaler.pkl")
+    normalizer = load_transformer("normalizer.pkl")
 
     # Title of the application
     st.title('Employee Attrition Prediction')
